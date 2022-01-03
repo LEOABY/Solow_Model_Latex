@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage{amssymb}
+\def\nbR{\ensuremath{\mathrm{I\! R}}}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\textbf{I) Postulats}
+\\\\
+\textbf{1) Neutralité au sens de DOMAR : }
+
+	La fonction de production est définie par \textbf{Y} telle que \textbf{Y=F(K,AL)}
+\\\\
+\textbf{2) Rendements d'échelle croissants : }
+$\forall c \in $\nbR$ $ , \textbf{cF(K,AL)=F(CK,CAL)}, c'est-à-dire que la hausse de la production est proportionnelle à la hausse des facteurs de production.
+\newline\\
+\textbf{3) Postulats sur f(k) : }
+
+- f(k) est une fonction croissante
+
+- f'(k) $\leq$ 0
+
+- f''(k) $\geq$ 0
+
+- \textbf{ Conditions d'Inada ( en 1951) : }
+
+* $\lim\limits_{k \to 0}$ f'(k) = $+\infty$            				
+
+* $\lim_{k \to +\infty}$ f'(k)= 0
+\\\\
+\textbf{4) Dynamique des postulats : }
+
+On pose k=$\frac{K}{AL}$ tel que $\frac{Y}{AL}$= f(k). En effet, on a f(k)= F(K,1)=F($ \frac{K}{AL}$, 1)
+
+$\Rightarrow$ ALf(k) = F(K, AL)=Y (d'après le postulat 2)
+
+ $\Rightarrow$ ALf(k) = Y $\Leftrightarrow$ f(k)= $\frac{Y}{AL}$= y
+\\\\
+De plus, on a $\frac{\partial Y}{\partial K}$ = f'(k) :
+
+En effet, $\frac{\partial Y}{\partial K}$= $\frac{\partial F(K,AL)}{\partial K}$ = $\frac{\partial ALf(k)}{\partial K}$ = ALf'(k)$\stackrel{.}{k}$ = ALf'(k)$\frac{1}{AL}$= f'(k)
+\\\\
+\textbf{5) Propositions : }
+
+Dans le cadre du modèle de Solow, l'économie converge vers un sentier de croissance équilibré quelle que soit les conditions initiales :
+\\\\
+\textbf{Démonstration : }
+
+On a le taux de croissance des connaissances  $\frac{\stackrel{.}{A}}{A}$(t)=g et le taux de croissance de la population : $\frac{\stackrel{.}{L}}{L}$(t)=n
+
+D'après la proposition 1: Y=ALf(k) $\Rightarrow$ $\frac{\stackrel{.}{Y}}{Y}$= $\stackrel{.}{\ln (Y)}$ = $\stackrel{.}{\ln(ALf(k))}$ = $\stackrel{.}{\ln (A)}$ + $\stackrel{.}{\ln (L)}$ + $\stackrel{.}{\ln (f(k))}$ = $\frac{\stackrel{.}{A}}{A}$ + $\frac{\stackrel{.}{L}}{L}$ + $\frac{f'(k)\stackrel{.}{k}}{k}$
+or $\lim\limits_{k \to k*}$ f'(k) = f'(k*) car $\lim\limits_{t \to +\infty}$ k = k* et car $\lim\limits_{t \to +\infty}$ $\stackrel{.}{k}$  = 0
+
+\textbf{$\Rightarrow$  $\lim\limits_{t \to +\infty}$ $\frac{\stackrel{.}{Y}}{Y}$ = g + n}
+
+De même $\lim\limits_{t \to +\infty}$ $\frac{\stackrel{.}{K}}{K}$ = g + n
+
+Ensuite, $\frac{\stackrel{.}{Y/L}}{Y/L}$ = $\ln (\frac{Y}{L})$ = $\stackrel{.}{\ln (Y)}$ + $\stackrel{.}{\ln (L)}$ or d'après ci-dessus $\lim\limits_{t \to +\infty}$ $\frac{\stackrel{.}{Y}}{Y}$ = g + n  et $\lim\limits_{t \to +\infty}$ $\frac{\stackrel{.}{L}}{L}$ = n $\Rightarrow$  $\lim\limits_{t \to +\infty}$  $\frac{\stackrel{.}{Y/L}}{Y/L}$ = n + g - n = g
+\\\\
+Il est donc possible d'en déduire qu'à long terme le taux de croissance de l'économie sera fixé par le taux de croissance des connaissances. Or, dans le modèle de Solow, nous n'avons pas d'idée précise de la façon dont l'investissement va influencer la croissance des connaissances (voir le modèle de ROMER afin de comprendre comment évolue le taux de croissance des connaissances g ). Malgré tout, dans ce modèle, il est possible de jouer sur le capital. Il faut donc alors s'intéresser à l'investissement dans le capital (machines par exemple). Ainsi, on pose s tel que sY est la part de la production (ou du PIB) investie dans le capital.
+\\\\
+Enfin, la dynamique du capital est fixée par l'équation différentielle suivante : $\stackrel{.}{\ln (K)}$ = sY - $\delta$ K avec $\delta$ > 0 qui correspond à l adépréciation du capital et s $\in$ [0,1] la part de la production (Y) consacrée aux investissment. 
+
+Enfin n + g + $\delta$ $\geq$  0
+\\\\
+\textbf{II) La dynamique du modèle de Solow : }
+\\\\
+\textbf{1) Théorème 1 : }
+
+L'évolution du capital par unité de travail effectif ( égal $\frac{K}{AL}$ ) est décrite par l'équation différentielle suivante : 
+
+$\stackrel{.}{k}$ = sf(k) - (n + g + $\delta$)k $\Rightarrow$  $\frac{\stackrel{.}{k}}{k}$= $\stackrel{.}{\ln (k)}$
+
+Or $\ln (k)$ = $\ln (\frac{K}{AL})$ = $\ln(K)$ - $\ln (A)$ - $\ln (L)$ $\Rightarrow$ $\frac{\stackrel{.}{k}}{k}$ = $\frac{\stackrel{.}{K}}{K}$ - $\frac{\stackrel{.}{A}}{A}$ - $\frac{\stackrel{.}{L}}{L}$ 
+
+= $\frac{sY - \delta K}{K}$ - g -n = $\frac{sY}{K}$ - $\delta$ - g - n = $\frac{sALf(k)}{K}$ - $\delta$ - g - n = $\frac{AL}{K}$ sf(k) - $\delta$ - g - n = $\frac{1}{k}$ sf(k) - $\delta$ - g - n  (d'aprés le postulat 2 ALf(k) = Y et car $\frac{K}{AL}$ = k $\Leftrightarrow$ $\frac{1}{k}$ = $\frac{AL}{K}$ ) .
+
+On a donc $\frac{\stackrel{.}{k}}{k}$ = $\frac{sf(k)}{k}$ - ($\delta$ + g + n) $\Leftrightarrow$ $\stackrel{.}{k}$ = sf(k) - k($\delta$ + g + n)
+\\\\
+\textbf{ 2) Théoréme 2 : }
+
+On dit qu'une économie converge vers un sentier de croissance équilibré (\textit{ "Balanced Growth Path"} au sens de Solow) par rapport à un modèle donné quand le taux de croissance de chacune des variables du modèle est constant lorsque t $\longrightarrow$ +$\infty$ .
+
+\textbf{ pour démonstration voir résolution graphique }
+\\\\
+\textbf{III) Application du modèle de Solow en politique économique : }
+
+On a Production = Consommation (=C) + Investissement (=I) $\Leftrightarrow$ Y=C+I ( on pose c= $\frac{C}{AL}$ et I=$\frac{sY}{AL}$ ) 
+
+$\Leftrightarrow$ $\frac{Y}{AL}$ =  $\frac{C}{AL}$ + $\frac{sY}{AL}$ $\Leftrightarrow$ f(k) = $\frac{C}{AL}$ + $\frac{sY}{AL}$ $\Leftrightarrow$ f(k) = c + sf(k) $\Leftrightarrow$ c = f(k) - sf(k) $\Leftrightarrow$ c= (1-s)f(k)
+
+Afin de maximiser c, (qui représente la consommation par unité de travail effectif, qui permet donc un arbitrage entre consommer à court terme et épargner pour investir à long terme) on cherche le point ou la dérivée de c.
+
+La consommation sera donc maximisée lorsque k* sera à k*($s_{or}$) (avec $s_{or}$ le niveau de règle d'or qui est le niveau d'invesitissement maximisant notre investissement de long terme).
+
+
+
+
+
+\end{document}
